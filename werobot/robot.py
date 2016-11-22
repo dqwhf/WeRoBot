@@ -288,7 +288,8 @@ class BaseRoBot(object):
         id = None
         session = None
         if session_storage and hasattr(message, "source"):
-            id = to_binary(message.source)
+            #id = to_binary(message.source)
+            id =message.source
             session = session_storage[id]
 
         handlers = self.get_handlers(message.type)
