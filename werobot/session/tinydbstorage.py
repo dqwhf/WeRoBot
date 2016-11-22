@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
-from tinydb import import TinyDB, where,Query
+from tinydb import TinyDB, where,Query
 import uuid
 
-from werobot.session import import SessionStorage
-from werobot.utils import import json_loads, json_dumps
+from werobot.session import SessionStorage
+from werobot.utils import json_loads, json_dumps
 
 class TinydbStorage(SessionStorage):
-   """
+    """
     FileStorage 会把你的 Session 数据以 dbm 形式储存在文件中。
 
     :param filename: 文件名， 默认为 ``werobot_session``
